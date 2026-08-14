@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+        <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <!-- this is a contact page. this page is ussed for form submission or to reach out. -->
 
-     <!-- this is a contact form -->
-      <form action="" method="post">
-        <div>
-            <h1>Contact Us</h1>
-            <div>
-                <input type="text" name="" id="" placeholder="Your Name" required>
-                <input type="email" name="" id="" placeholder="Your Email" required>
-                <input type="text" name="" id="" placeholder="Number">
-                <textarea name="" id="" cols="30" placeholder="Your Message"></textarea>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-                <!-- <button type="reset">Cancel</button> -->
-            </div>
+        <!-- Contact form -->
+        <div class="contact-wrapper">
+            <form class="contact-card" action="" method="post">
+                <h2 class="card-title">Contact Us</h2>
+
+                <div class="fields">
+                    <input class="input" type="text" name="name" placeholder="Your Name" required>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                    <input class="input" type="tel" name="phone" placeholder="Phone Number">
+                    <textarea class="input textarea" name="message" placeholder="Message"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-secondary" type="button" onclick="window.history.back();">Cancel</button>
+                </div>
+            </form>
         </div>
-      </form>
 </body>
 </html>

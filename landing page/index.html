@@ -4,54 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Landing Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- the navbar: this is the bar that appears at the top of the page -->
-    <nav>
-        <div>DesignAgency</div>
-        <ul>
-            <select>
-                <option value="">Services</option>
-                <option value="web-design">Web Design</option>
-                <option value="graphic-design">Graphic Design</option>
-            </select>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><button>Login</button></li>
-            <li><button>Register</button></li>
-        </ul>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <div class="logo">Design<span class="logo-accent">AGENCY</span></div>
+
+            <div class="nav-center">
+                <select class="nav-select" aria-label="Services">
+                    <option value="">Services</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="graphic-design">Graphic Design</option>
+                </select>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+                <div class="nav-actions">
+                    <button class="btn btn-outline">Login</button>
+                    <button class="btn btn-ghost">Register</button>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- this is the hero section: the section that appeears immediately below the navbar -->
-     <section>
-        <!-- left container -->
-        <div>
-            <div>
-                <h2>
-                    Increase your customer loyalty and satisfaction.                
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, autem eos exercitationem asperiores nisi rerum officia sint nihil omnis. Doloribus assumenda quae culpa! Modi omnis doloremque animi nulla debitis numquam.
-                </p>
-            </div>
-            <button>Get Started.</button>
-        </div>
-        <!-- right container -->
-         <div>
-            <img src="./images/lady.png" alt="Image of a lady">
-         </div>
-     </section>
+         <section class="hero">
+                <div class="hero-inner">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Increase Your Customers Loyalty and Satisfaction</h1>
+                        <p class="hero-sub">We help businesses like yours earn more customers, standout from competitors, make more money</p>
+                        <div class="hero-cta">
+                            <button class="btn btn-primary btn-lg">Get Started</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-media">
+                        <img src="./images/lady.png" alt="Woman holding laptop">
+                    </div>
+                </div>
+         </section>
 
      <!-- this is the footer section section: the footer is the section that appears at the bottom of a webpage -->
-      <footer>
-        <div>
-            <img src="./images/logos_google.png" alt="">
-            <img src="./images/logos_monday.png" alt="">
-            <img src="./images/Notion.png" alt="">
-            <img src="./images/Slack.png" alt="">
-            <img src="./images/trello.png" alt="">
-        </div>
-      </footer>
+            <footer class="brands">
+                <div class="brands-inner">
+                        <img src="./images/logos_google.png" alt="Google">
+                        <img src="./images/trello.png" alt="Trello">
+                        <img src="./images/logos_monday.png" alt="monday.com">
+                        <img src="./images/Notion.png" alt="Notion">
+                        <img src="./images/Slack.png" alt="Slack">
+                </div>
+            </footer>
 </body>
 </html>
 
